@@ -21,6 +21,8 @@ The length of the snake.
 The inputs relating to the amount of available space are not as intuitive as the others, so let's look at a particular example state of the game:
 
 ![image](https://github.com/srushti-afk/Snake_Game/assets/58765433/c07de0fe-13fe-425c-84a3-756a0d8b97d8)
+
+
 The head of the snake is indicated by the green block with eyes. The other green blocks are parts of the snake's body. The amount of available space if it goes both down or up in the next frame is 0, since the head will hit its own body and game over. The amount of available space if it goes left in the next frame is 6, since there are 6 open spaces enclosed around the snake's body in that direction. Finally, the amount of available space if it decides to go right in the next frame is 74, because this is the amount of spaces left in the grid that are not closed off by its body.
 
 As for the outputs of the network, there are four nodes each representing a decision to move up, down, left or right. Each decision for each direction was a value between 0 and 1, and the snake went go in the direction that has the highest value associated with it.
